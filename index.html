@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo List</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+
+  <h1 id="main-heading">ToDo's</h1>
+  <div id="main-container">
+    <section id="input-section">
+      <input type="text" placeholder="Type your todo list" id="add">
+      <button type="submit" id="submit-btn">Add Task</button>
+    </section>
+
+    <!-- extra filter buttons -->
+    <div class="filter-btns">
+      <div><i class="fa fa-check"></i>
+        <button id="complete-all">Complete All Tasks</button>
+      </div>
+      <button id="clear-completed">Clear Completed</button>
+
+    </div>
+
+    <!-- all the items will display here -->
+    <div id="items-list">
+
+
+    </div>
+
+
+    <div class="filter-btns">
+      <!-- counter -->
+      <div id="counter"><span id="task-counter">0</span> task(s)-left</div>
+
+      <!-- some extra buttons for filtering task -->
+      <div>
+        <button id="all">All </button>
+        <button id="uncomplete">Uncomplete</button>
+        <button id="completed">Completed</button>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+  <script src="./assets/script.js"></script>
+  <script type="text/javascript">
+    TODOListApp.initialize;
+  </script>
+</body>
+
+</html>
